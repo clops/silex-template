@@ -4,3 +4,4 @@ composer.lock
 composer.phar
 vendor
 resources/cache/*
+resources/log/*
