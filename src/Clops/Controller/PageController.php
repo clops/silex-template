@@ -21,7 +21,7 @@
          * @return mixed
          */
         public function indexAction(Request $request, Application $app) {
-            return $app['twig']->render('root.html.twig', array());
+            return $app['twig']->render('index.html.twig', array());
         }
 
     }
