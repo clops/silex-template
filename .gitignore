@@ -3,5 +3,5 @@
 composer.lock
 composer.phar
 vendor
-resources/cache/*
+resources/cache/twig/
 resources/log/*
