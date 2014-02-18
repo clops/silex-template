@@ -22,7 +22,7 @@ Silex-Based Website Template which can be used as a starting point for pretty mu
 ## Installation ##
 
   1. Get this template to your machine:
-     ```git clone git@github.com:ivoba/superleansilexplate.git```
+     ```git clone git@github.com:clops/silex-template.git```
   2. Get composer (if you don't have a global one):
      ```curl -s http://getcomposer.org/installer | php```
   3. Run installation of dependancies:
