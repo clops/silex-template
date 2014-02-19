@@ -6,7 +6,7 @@
 
 	$app = new Silex\Application();
 
-	require_once __DIR__ . '/../resources/config/prod.php';
+	require_once __DIR__ . '/../resources/config/dev.php';
 	require_once __DIR__ . '/../src/Bootstrap.php';
 	require_once __DIR__ . '/../src/Routes.php';
 
