@@ -9,7 +9,6 @@ Silex-Based Website Template which can be used as a starting point for pretty mu
     * Includes a pre-defined HTML5 Boilerplate Template as a starting point -- http://html5boilerplate.com
     * Includes Modernizr -- http://modernizr.com
   * Development, Testing and Production Versions (pending)
-  * Assetic-Ready (pending)
   * ...
   * Profit :)
 
