@@ -8,6 +8,9 @@ Silex-Based Website Template which can be used as a starting point for pretty mu
   * Ready-to-roll Twig Template setup to start creating pages right away
     * Includes a pre-defined HTML5 Boilerplate Template as a starting point -- http://html5boilerplate.com
     * Includes Modernizr -- http://modernizr.com
+  * Assetic included (works automagically)
+    * Parses LESS files into plain CSS
+    * Combines CSS and JS files into single files
   * Development, Testing and Production Versions (pending)
   * ...
   * Profit :)
