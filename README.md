@@ -11,10 +11,9 @@ Silex-Based Website Template which can be used as a starting point for pretty mu
   * Assetic included (works automagically)
     * Parses LESS files into plain CSS
     * Combines CSS and JS files into single files
-  * Development, Testing and Production Versions (pending)
-  * ...
-  * Profit :)
-
+  * Development Version
+  * Production Version (optimized with cache and compiled assets)
+  * Test Version ready for PHPUnit
 
 ## Prerequisites ##
 
