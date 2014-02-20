@@ -27,4 +27,15 @@
         }
 
 
+        /**
+         * Checking that the index page displays the expected texts
+         */
+        public function testIndex() {
+            $client = $this->createClient();
+            $crawler = $client->request('GET', '/');
+            $this->assertTrue($crawler->filter('html:contains("Welcome")')->count() > 0);
+            $this->assertTrue($crawler->filter('html:contains("Say hello to your easy silex template")')->count() > 0);
+        }
+
+
     }
