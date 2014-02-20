@@ -1,15 +1,15 @@
 <?php
 
-    namespace Clops\Composer;
+	namespace Clops\Composer;
 
-    class Script
-    {
-        public static function install()
-        {
-            chmod('resources/cache', 0777);
-            chmod('resources/log', 0777);
-            chmod('web/assets', 0777);
-            //chmod('console', 0500);
-            //exec('php console assetic:dump');
-        }
-    }
+	class Script {
+
+		public static function install() {
+			chmod('resources/cache', 0777);
+			chmod('resources/log', 0777);
+			chmod('web/assets', 0777);
+			chmod('console', 0500);
+			exec('php console assetic:dump');
+			exec('php console cache:clear');
+		}
+	}

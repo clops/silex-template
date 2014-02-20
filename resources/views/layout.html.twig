@@ -17,30 +17,28 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/main.css">
+	<link href="/assets/css/styles.css" type="text/css" rel="stylesheet">
 
-    <!-- custom CSS -->
+    <!-- start custom CSS -->
     {% block stylesheets %}{% endblock %}
     <!-- end custom CSS -->
 
-    <script src="/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="/assets/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Content Starts Here -->
+    <!-- start Content -->
     {% block content %}{% endblock %}
-    <!-- Content Ends Here -->
+    <!-- end Content -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="/js/plugins.js"></script>
-<script src="/js/main.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.js"></script>
 
-<!-- custom Java Scripts -->
+<!-- start custom Java Scripts -->
 {% block javascripts %}{% endblock %}
 <!-- end custom Java Scripts -->
 
@@ -55,7 +53,3 @@
 </script>
 </body>
 </html>
-
-
-
-
