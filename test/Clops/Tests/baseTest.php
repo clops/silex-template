@@ -26,15 +26,16 @@
             $this->assertEquals(404, $client->getResponse()->getStatusCode());
         }
 
-
         /**
          * Checking that the index page displays the expected texts
          */
         public function testIndex() {
-            $client = $this->createClient();
+            $client  = $this->createClient();
             $crawler = $client->request('GET', '/');
-            $this->assertTrue($crawler->filter('html:contains("Welcome")')->count() > 0);
-            $this->assertTrue($crawler->filter('html:contains("Say hello to your easy silex template")')->count() > 0);
+
+            $this->assertTrue($client->getResponse()->isOk());
+            $this->assertCount(1, $crawler->filter('h1:contains("Welcome")'));
+            $this->assertCount(1, $crawler->filter('html:contains("Say hello to your easy silex template")'));
         }
 
 
