@@ -1,4 +1,4 @@
-<?
+<?php
 
 	// Local
 	$app['locale'] = 'en';

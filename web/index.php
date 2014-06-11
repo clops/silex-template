@@ -1,4 +1,4 @@
-<?
+<?php
 	/**
 	 * @author  Alexey Kulikov aka clops <me@clops.at>
 	 *
