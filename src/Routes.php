@@ -17,20 +17,16 @@
 	## Error Handlers ##############################################################
 	#
 	$app->error(function (\Exception $e, $code) use ($app) {
-		if ($app['debug']) {
-			return null;
-		}
-
 		switch ($code) {
 			case 404:
 				$message = $app['twig']->render('error404.html.twig');
 				break;
 			default:
 				$message = 'We are sorry, but something went terribly wrong.';
-
-				if ($app['debug']) {
-					$message .= ' Error Message: ' . $e->getMessage();
-				}
+		}
+		
+		if ($app['debug']) {
+			$message .= ' Error Message: ' . $e->getMessage();
 		}
 
 		return new Response($message, $code);
