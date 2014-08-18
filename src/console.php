@@ -6,7 +6,7 @@
     use Symfony\Component\Filesystem\Filesystem;
     use Symfony\Component\Finder\Finder;
 
-    $console = new Application('Silex - Clops Edition', '0.1b');
+    $console = new Application('Silex - Clops Edition', '0.1');
 
     $app->boot();
 
