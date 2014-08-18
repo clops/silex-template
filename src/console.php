@@ -23,6 +23,7 @@
                 $dumper->addTwigAssets();
             }
             $dumper->dumpAssets();
+            
             $output->writeln('<info>Dump finished</info>');
         })
     ;
