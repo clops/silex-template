@@ -14,11 +14,13 @@ Silex-Based Website Template which can be used as a starting point for pretty mu
   * Development Version
   * Production Version (optimized with cache and compiled assets)
   * Test Version ready for PHPUnit
+  * Console Deployment Scripts to rebuild cache and deploy assets
 
 ## Prerequisites ##
 
   * PHP 5.3.2+
   * Composer
+  * Some really basic knowledge of Silex
 
 ## Installation ##
 
@@ -28,6 +30,12 @@ Silex-Based Website Template which can be used as a starting point for pretty mu
      ```curl -s http://getcomposer.org/installer | php```
   3. Run installation of dependancies:
      ```php composer.phar install```
-  4. Set writing permissions:
+  4. Set writing permissions (optional, as composer will attempt to do this):
      ```chmod 777 -R resources/cache resources/log```
   5. Configure your web-server to deliver ```web/``` as the host root
+
+## Usage ##
+
+  * ```src/Routes.php``` contains all the registered routes with the respective Controllers
+  * ```src/Clops/Controller/*``` place where the page controllers reside, add yours here too
+  * Use phpunit from ```test``` to fire your Unit Tests, use ```test/Clops/Tests/baseTest.php``` as a starting point
