@@ -1,2 +1,2 @@
 <?php
-	$app['debug'] = true;
+    $app['debug'] = true;

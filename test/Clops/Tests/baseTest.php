@@ -5,8 +5,10 @@
     use Silex\Application;
     use Silex\WebTestCase;
 
-    class baseTest extends WebTestCase {
-        public function createApplication() {
+    class baseTest extends WebTestCase
+    {
+        public function createApplication()
+        {
             $app = new Application();
 
             require __DIR__ . '/../../../resources/config/test.php';
@@ -19,7 +21,8 @@
         /**
          * Making sure we have a 404 page
          */
-        public function test404() {
+        public function test404()
+        {
             $client = $this->createClient();
 
             $client->request('GET', '/give-me-a-404');
@@ -29,7 +32,8 @@
         /**
          * Checking that the index page displays the expected texts
          */
-        public function testIndex() {
+        public function testIndex()
+        {
             $client  = $this->createClient();
             $crawler = $client->request('GET', '/');
 
@@ -37,6 +41,5 @@
             $this->assertCount(1, $crawler->filter('h1:contains("Welcome")'));
             $this->assertCount(1, $crawler->filter('html:contains("Say hello to your easy silex template")'));
         }
-
 
     }
